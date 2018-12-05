@@ -1,0 +1,44 @@
+button,
+div,
+form,
+input {
+  margin: 5px;
+}
+h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+#addButton {
+  background-color: black;
+  color: white;
+}
+#addCast {
+  background-color: black;
+  color: white;
+}
+#inputCharacter {
+  color: black;
+  font-weight: bold;
+}
+
+#container {
+}
+.cast {
+  background-color: black;
+  color: white;
+}
+body {
+  background-image: url('../images/the-office.jpg');
+}
+
+#gif-view {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Aclonica', sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
