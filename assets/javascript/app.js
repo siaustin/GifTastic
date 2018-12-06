@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  //Initial array of characters
   var characters = [
     'Dwight Schrute',
     'Jim Halpert',
@@ -29,7 +28,7 @@ $(document).ready(function() {
 
   function displayCharacters() {
     var cast = $(this).attr('data-name');
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + cast + '&api_key=dc6zaTOxFJmzC&limit=10';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + cast + '&api_key=dc6zaTOxFJmzC&limit=10';
 
     $.ajax({
       url: queryURL,
@@ -40,7 +39,7 @@ $(document).ready(function() {
       for (var i = 0; i < results.length; i++) {
         var castDiv = $("<div class = 'castDiv'>");
 
-        var p = $('<p>').text('Rating: ' + rating); //put rating on page
+        var p = $('<p>').text('Rating: ' + rating);
         var rating = results[i].rating;
 
         var castImg = $('<img>');
@@ -79,7 +78,7 @@ $(document).ready(function() {
 
   $('#addButton').on('click', function(event) {
     event.preventDefault();
-    var cast = $('addCast')
+    var cast = $('#addCast')
       .val()
       .trim();
     characters.push(cast);
